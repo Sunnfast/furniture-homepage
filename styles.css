@@ -77,7 +77,7 @@ html {
     top: 350px;
 }
 
-
+/* buttons */
 
 #click-btns {
     display: flex;
@@ -86,6 +86,7 @@ html {
     left: 840px;
 }
 
+/* left button */
 #left-btn {
     background-color: var(--black);
     border: none;
@@ -102,6 +103,7 @@ html {
     /* border: solid 4px magenta; */
 }
 
+/* right btn */
 #right-btn {
     background-color: var(--black);
     border: none;
