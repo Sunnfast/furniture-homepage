@@ -41,17 +41,42 @@ function dynamicText() {
 
 // }
 
+// use buttons to rotate through gallery in one direction 
+// STATUS: CURRENTLY NOT FUNCTIONING
 
+// right button = forward;
 const rightB = document.querySelector("#right-btn");
-rightB.addEventListener('click', rotateGallery);
+rightB.addEventListener('click', rotateGalleryRight);
 
-// rotating image gallery via array cycling
-    let gallery = ["desktop-image-hero-1.jpg", "desktop-image-hero-2.jpg", "desktop-image-hero-3.jpg"];
-    function rotateGallery() {
+// left button = back;
+const leftB = document.querySelector("#left-btn");
+leftB.addEventListener('click', rotateGalleryLeft);
+
+
+
+// rotating image gallery forward via array cycling -- CURRENTLY NOT FUNCTIONING
+  let galleryForward = ["images/gallery/desktop-image-hero-1.jpg", "images/gallery/desktop-image-hero-2.jpg", "images/gallery/desktop-image-hero-3.jpg"];
+    function rotateGalleryRight() {
         let i = 0;
-        document.getElementById("rotating-image").src = gallery[i];
+        document.getElementById("#rotating-image").src = galleryForward[i];
         i++;
-        if (i => gallery.length) {
-            counter = 0;
+        // loops back around to the start if you continue clicking through
+        if (i >= galleryForward.length) {
+            i = 0;
         }
     };
+
+    let galleryBackward = ["images/gallery/desktop-image-hero-1.jpg", "images/gallery/desktop-image-hero-3.jpg", "images/gallery/desktop-image-hero-2.jpg"];
+    function rotateGalleryLeft() {
+        let i = 0;
+        document.getElementById("#rotating-image").src = "images\gallery\desktop-image-hero-1.jpg";
+        //galleryBackward[i];
+        i++;
+        // loops back around to the start if you continue clicking through
+        if (i >= galleryBackward.length) {
+            i = 0;
+        }
+    };
+
+    
+rotateGalleryLeft();

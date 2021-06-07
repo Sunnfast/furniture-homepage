@@ -114,7 +114,7 @@ html {
     border: none;
     padding: 30px;
     left: 100px;
-    /* border: solid 3px cyan; */
+    border: solid 3px cyan;
 }
 
 
@@ -151,8 +151,6 @@ h2 {
     
 
 }
-/* 
-fix small gap between pictures on the left side, adjust the top right picture to close the gap */
 
 #small-black-chair-image {
     max-width: 420px;
