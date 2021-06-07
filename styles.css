@@ -1,0 +1,113 @@
+:root {
+    --darkGray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --veryDarkGray: hsl(0, 0%, 27%);
+  
+}
+
+html {
+    font-family: 'Spartan', sans-serif;
+    line-height: 0.8em;
+    font-size: 62.5%;
+    font-size: 1.2rem;
+    max-width: 1440px;
+    max-height: 800px;
+}
+
+ /* #navdiv {
+    
+}     */
+
+
+
+#logo {
+    /* border: solid 2px magenta; */
+    height: auto;
+    width: 65px;
+    z-index: 2;
+    position: absolute;
+    top: 3.5em;
+    left: 3em;
+    align-items: center;
+
+    
+}
+
+.navbar {
+    /* border: solid 3px purple; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    margin-left: 8em;
+    top: 3em;
+    position: absolute;
+    min-width: 16rem;
+    max-width: 17.5rem;
+    align-items: center;
+    
+}
+
+.nav-link {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--white);
+    z-index: 2;
+    font-size: .8rem;
+
+   
+	
+}
+
+#top-container {
+    border: solid 3px blue;
+    display: flex;
+    position: relative;
+    height: 535px;
+    z-index: -4;
+}
+
+#big-white-chair-image {
+    width: 840px;
+    
+    
+}
+
+h2 {
+    color: var(--black);
+    font-size: 12px;
+    letter-spacing: .4em;
+    
+    
+}
+
+#bot-container {
+    border: solid 3px green;
+    position: relative;
+    display: flex;
+    color: var(--darkGray);
+    max-height: 265px;
+    font-size: 1.2rem;
+    
+
+}
+
+#small-black-chair-image {
+    max-width: 420px;
+    height: auto;
+}
+
+#about {
+    padding: 3rem;
+    max-height:265px;
+    font-size: 12px;
+    max-width: 580px;
+    
+
+}
+
+#small-white-chair-image {
+    max-width: 440px;
+    height: auto;
+}
