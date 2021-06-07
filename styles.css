@@ -126,7 +126,7 @@ html {
     
 }
 
-
+/* BOTTOM HALF */
 h2 {
     color: var(--black);
     font-size: 12px;
@@ -135,7 +135,7 @@ h2 {
     
 }
 
-/* BOTTOM HALF */
+
 #bot-container {
     /* border: solid 3px green; */
     position: relative;
