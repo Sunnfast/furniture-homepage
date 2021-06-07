@@ -40,3 +40,18 @@ function dynamicText() {
 // function shopLink() {
 
 // }
+
+
+const rightB = document.querySelector("#right-btn");
+rightB.addEventListener('click', rotateGallery);
+
+// rotating image gallery via array cycling
+    let gallery = ["desktop-image-hero-1.jpg", "desktop-image-hero-2.jpg", "desktop-image-hero-3.jpg"];
+    function rotateGallery() {
+        let i = 0;
+        document.getElementById("rotating-image").src = gallery[i];
+        i++;
+        if (i => gallery.length) {
+            counter = 0;
+        }
+    };
