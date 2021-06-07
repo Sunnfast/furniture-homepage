@@ -15,10 +15,6 @@ html {
     max-height: 800px;
 }
 
- /* #navdiv {
-    
-}     */
-
 
 
 #logo {
@@ -61,7 +57,7 @@ html {
 }
 
 #top-container {
-    border: solid 3px blue;
+    /* border: solid 3px blue; */
     display: flex;
     position: relative;
     height: 535px;
@@ -74,6 +70,61 @@ html {
     
 }
 
+#arrow {
+    display: inline-block;
+    position: absolute;
+    left: 1100px;
+    top: 350px;
+}
+
+
+
+#click-btns {
+    display: flex;
+    position: absolute;
+    top: 445px;
+    left: 840px;
+}
+
+#left-btn {
+    background-color: var(--black);
+    border: none;
+    padding: 30px;
+
+    
+}
+
+#left-btn svg {
+    width: 25px;
+    height: 25px;
+    padding-left: 5px;
+    
+    /* border: solid 4px magenta; */
+}
+
+#right-btn {
+    background-color: var(--black);
+    border: none;
+    padding: 30px;
+    left: 100px;
+    /* border: solid 3px cyan; */
+}
+
+
+#right-btn svg {
+    width: 25px;
+    height: 25px;
+    padding-left: 5px;
+    
+}
+
+
+#right-btn:hover {
+    background-color: var(--veryDarkGray);
+    
+}
+
+
 h2 {
     color: var(--black);
     font-size: 12px;
@@ -82,8 +133,9 @@ h2 {
     
 }
 
+/* BOTTOM HALF */
 #bot-container {
-    border: solid 3px green;
+    /* border: solid 3px green; */
     position: relative;
     display: flex;
     color: var(--darkGray);
@@ -92,22 +144,27 @@ h2 {
     
 
 }
+/* 
+fix small gap between pictures on the left side, adjust the top right picture to close the gap */
 
 #small-black-chair-image {
     max-width: 420px;
     height: auto;
+    
 }
 
 #about {
     padding: 3rem;
     max-height:265px;
     font-size: 12px;
-    max-width: 580px;
+    max-width: 485px;
     
 
 }
 
 #small-white-chair-image {
-    max-width: 440px;
+    min-width: 440px;
     height: auto;
+    z-index: -1;
+    position: absolute;
 }
