@@ -10,7 +10,7 @@
 
   <!--SPARTAN font import-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet"> 
 
   <title>Room: Bring Your Vision to Life</title>
 
@@ -32,93 +32,98 @@
 
 
   
+<div class = "container">
+<!--TOP HALF (dyanmic)-->
 
-  <!--TOP HALF (dyanmic)-->
-  <div id = "top-container">
+<!--grid item 1-->
+  <div id = "dynamic-image" class = "item1">
+    <img src = "images/gallery/desktop-image-hero-1.jpg" 
+    alt = "A three photograph gallery featuring different colored chairs with minimalist styles."
+    id = "rotating-image">
 
+  </div>
 
-    <div id = "dynamic-image">
-      <img src = "images/gallery/desktop-image-hero-1.jpg" 
-      alt = "A three photograph gallery featuring different colored chairs with minimalist styles."
-      id = "rotating-image">
-
-    </div>
-    <!--dynamic header-->
+  <!--grid item 2-->
+  <div> <!--dynamic header-->
     <div id = "dynamic-header">
-
     </div>
-
     <!--dynamic flavor text-->
     <div id = "dynamic-text">
-      
-
-     
     </div>
+  </div>
+   
 
-   <!--ARROW SVG-->
-    <div id ="arrow">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="12" class = "interactive">
-        <path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/>
-      </svg>
-    </div>
+ <!--ARROW SVG-->
+  <div id ="arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="12" class = "interactive">
+      <path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/>
+    </svg>
+  </div>
+    
+
+
+  <!--left/right buttons-->
+    <div id = "click-btns">
       
-
-
-    <!--left/right buttons-->
-      <div id = "click-btns">
+      <button id = "left-btn"
+      class = "btn"> <!--assigning a second class for interactivity-->
         
-        <button id = "left-btn"
-        class = "btn"> <!--assigning a second class for interactivity-->
-          
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24">
-              <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd"/>
-            </svg>
-            </button>
-
-          
-          
-          
-          
-          
-        <button
-          id = "right-btn"
-          class = "btn"
-          type = "button"> 
-
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24">
-            <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd"/>
-           
+            <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd"/>
           </svg>
-      
-        </button>
-      </div>
+          </button>
+
+        
+        
+        
+        
+        
+      <button
+        id = "right-btn"
+        class = "btn"
+        type = "button"> 
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24">
+          <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd"/>
+         
+        </svg>
+    
+      </button>
+    </div>
+
+
+<!--BOTTOM HALF (static)-->
+
+  <!--grid item 4-->
+  <div id= "static-black-chair-img" class = "item4">
+    <img src = "images/image-about-dark.jpg"
+    alt = "A picture of a minimalist small black chair and coffee table."
+    id = "small-black-chair-image">
+
+  </div>
+  <!--grid item 5-->
+  <div id = "about" class = "item5">
+    <h2>ABOUT OUR FURNITURE</h2>
+
+    Our multifunctional collection blends design and function to suit your individual taste.
+    Make each room unique, or pick a cohesive theme that best express your interests and what
+    inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+    or anything in between. Product specialists are available to help you create your dream space.
+
+  </div>
+  <!--grid item 6-->
+  <div id = "static-white-chair-img" class = "item6">
+    <img src = "images/image-about-light.jpg"
+    alt = "A picture of a minimalist small white chair."
+    id = "small-white-chair-image">
   </div>
 
-  <!--BOTTOM HALF (static)-->
-  <div id = "bot-container">
-    <div id= "static-black-chair-img">
-      <img src = "images/image-about-dark.jpg"
-      alt = "A picture of a minimalist small black chair and coffee table."
-      id = "small-black-chair-image">
 
-    </div>
-    <div id = "about">
-      <h2>ABOUT OUR FURNITURE</h2>
 
-      Our multifunctional collection blends design and function to suit your individual taste.
-      Make each room unique, or pick a cohesive theme that best express your interests and what
-      inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-      or anything in between. Product specialists are available to help you create your dream space.
+
+
+</div>
   
-    </div>
-    <div id = "static-white-chair-img">
-      <img src = "images/image-about-light.jpg"
-      alt = "A picture of a minimalist small white chair."
-      id = "small-white-chair-image">
-    </div>
-
-
-  </div>
 
   <!--NAVBAR-->
   <div id = navdiv>  
