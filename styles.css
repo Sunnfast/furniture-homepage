@@ -221,9 +221,10 @@ object-fit: fill;
 }
 
 #static-white-chair-img {
-    position: absolute;
+    position: static;
     top: 145vh;
-    width: 100%;
+    width: 100em;
+    height: auto;
     display: flex;
 }
 
