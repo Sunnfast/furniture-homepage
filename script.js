@@ -1,4 +1,4 @@
-// dyanmic text
+// dynamic header, flavor text, and shop now
 
 let dyanmicDisplay =  "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love."
 let dynamicHeader = "Discover innovative \n ways to decorate"
@@ -6,7 +6,7 @@ let dynamicHeader = "Discover innovative \n ways to decorate"
 dynamicHeaderText();
 dynamicText();
 
-
+// dynamic header
 function dynamicHeaderText() {
 const dynamicHeaderStyle = document.getElementById("dynamic-header").style;
 document.getElementById("dynamic-header").innerText = dynamicHeader;
@@ -19,7 +19,7 @@ dynamicHeaderStyle.position = "absolute";
 dynamicHeaderStyle.left = "925px";
 
 }
-
+// dynamic flavor text
 // these are flex bc the parent node is flex!! [delete me]
 function dynamicText() {
     const dynamicStyle = document.getElementById("dynamic-text").style;
@@ -80,3 +80,30 @@ leftB.addEventListener('click', rotateGalleryLeft);
 
     
 rotateGalleryLeft();
+
+// MEDIA QUERIES //
+//               //
+
+
+const smallerDevice = window.matchMedia("(max-width: 1330px)");
+
+
+function handleDeviceChange(smallerDevice) {
+    const mobileHeader = document.getElementById("dynamic-header");
+    
+    if (smallerDevice.matches) {
+        mobileHeader.style.fontSize = "20px";
+        mobileHeader.style.position = 'absolute';
+        mobileHeader.style.paddingTop = '70%';
+        mobileHeader.style.right = "1000px";
+        document.body.style.backgroundColor = "pink";
+
+    }
+        
+}
+handleDeviceChange(smallerDevice);
+smallerDevice.addListener(handleDeviceChange);
+
+    
+
+    

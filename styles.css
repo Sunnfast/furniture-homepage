@@ -173,3 +173,64 @@ h2 {
     z-index: -1;
     position: absolute;
 }
+
+/* MOBILE DEVICES */
+/*                */
+
+@media (max-width: 1330px) {
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#rotating-image {
+width: 100vw;
+height: 70vh;
+margin-left: 0px;
+padding-left: 0px;
+object-fit: fill;
+}
+
+#logo {
+    left: 42.5%;
+    top: 10%;
+}
+
+#navbar {
+    display: none;
+}
+
+#static-black-chair-img {
+    position: absolute;
+    top: 60vh;
+    width: 100vw;
+    height: 40vh;
+    object-fit: fill;
+    display: flex;
+}
+
+#about {
+    left: 10%;
+    top: 95vh;
+    padding-left: 0;
+    padding-top: 20%;
+    /* border: solid 1px black; */
+    display: inline-block;
+    position: absolute;
+}
+
+#static-white-chair-img {
+    position: absolute;
+    top: 145vh;
+    width: 100%;
+    display: flex;
+}
+
+#attribution {
+    display: inline-block;
+    position: absolute;
+    bottom: -175vh;
+    z-index: 3;
+}
+}
