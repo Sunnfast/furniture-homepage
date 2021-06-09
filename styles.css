@@ -8,12 +8,7 @@
 
 html {
     font-family: 'Spartan', sans-serif;
-    line-height: 0.8em;
-    font-size: 62.5%;
-    font-size: 1.2rem;
-    max-width: 1440px;
-    max-height: 800px;
-}
+} 
 
 
 /*                       */
@@ -24,34 +19,50 @@ html {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+    grid-template-columns: auto auto auto; /* 3 columns */
     grid-template-rows: 1fr auto; /* 2 rows */
     border: solid 5px magenta;
     overflow: hidden;
 }
 
 .item1 {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
+    grid-column: 1;
+    grid-row: 1;
+    
+}
+
+#rotating-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .item2 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1;
+    
 }
 
+
 /* item3 is empty */
+.item3{
+    grid-column: 3;
+    grid-row: 1;
+    display: none;
+
+}
 
 /* new row */
 
 .item4 {
-    grid-column: 1 / 3;
-    grid-row: 2 / 2;
+    grid-column: 1;
+    grid-row: 2;
 }
 
 .item5 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 2;
+    grid-column: 2;
+    grid-row: 2;
     max-width: 580px;
 }
 
@@ -92,31 +103,25 @@ html {
 
 .nav-link {
     text-decoration: none;
-    /* cursor: pointer; */
     font-weight: 600;
     color: var(--white);
     z-index: 2;
     font-size: .8rem;
-
-   
+    cursor: pointer;
 	
 }
 
 
-#arrow {
-    display: inline-block;
-    position: absolute;
-    left: 1100px;
-    top: 350px;
-}
-
 /* buttons */
 
 #click-btns {
-    display: flex;
-    position: absolute;
-    top: 445px;
-    left: 840px;
+    /* display: grid;
+    grid */
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    
+
 }
 
 /* left button */
@@ -124,6 +129,7 @@ html {
     background-color: var(--black);
     border: none;
     padding: 30px;
+    
 
     
 }
@@ -168,7 +174,7 @@ h2 {
 }
 
 #small-black-chair-image {
-    max-width: 420px;
+    width: 100%;
     height: auto;
     
 }
@@ -183,10 +189,22 @@ h2 {
 }
 
 #small-white-chair-image {
-    min-width: 440px;
-    height: auto;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     
+}
+
+#attribution {
+    position: absolute;
+    z-index: 3;
+    font-size: 0.62rem; 
+    text-align: center;
+}
+
+#attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
 }
 
 /*                                  */
@@ -196,38 +214,61 @@ h2 {
 @media (max-width: 1000px) {
 .container {
     display: grid;
-    grid-template-columns: auto; /* 1 column */
-    grid-template-rows: 1fr 1fr 1fr 1fr auto; /* five rows */
+    grid-template-columns: repeat(1, minmax(360px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(360px, 1fr)); /* five rows */
     border: solid 3px red;
 }
 
 .item1 {
     grid-column: 1;
-    grid-row: 1 / 5;
+    grid-row: 1;
     border: solid 3px green;
     
 }
 
-.item2 { /*dynamic text */
-    grid-column: 1;
-    grid-row: 2 / 5;
-    border: solid 10px blue;
-    z-index: 5;
+#rotating-image {
+    height: 100%;
+    object-fit: fill;
 }
 
-.item4 {
+
+#click-btns {
+    
     grid-column: 1;
-    grid-row: 3 / 5;
+    grid-row: 1;
+    position: absolute;
+    top: 0px;
+    
+
+}
+
+.item2 { /*dynamic header & flavor text */
+    grid-column: 1;
+    grid-row: 2;
+    /* border: solid 10px blue; */
+    z-index: 5;
+
+    
+    
+   
+}
+
+/*item 3 is still empty */
+
+.item4 { /* static black chair & coffee table image */
+    grid-column: 1;
+    grid-row: 3;
     
 }
 
-#static-black-chair-img {
+ #static-black-chair-img {
     width: 100%;
-}
+    height: auto;
+} 
 
 .item5 {
     grid-column: 1;
-    grid-row: 4 / 5;
+    grid-row: 4;
 }
 
 #about {
@@ -236,7 +277,7 @@ h2 {
 
 .item6 {
     grid-column: 1;
-    grid-row: 5 / 5;
+    grid-row: 5;
 }
 
 
@@ -249,10 +290,15 @@ h2 {
     display: none;
 }
 
-
-
 #attribution {
     position: absolute;
     z-index: 3;
+    font-size: 0.62rem; 
+    text-align: center;
+}
+
+#attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
 }
 }

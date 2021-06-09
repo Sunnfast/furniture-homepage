@@ -15,27 +15,21 @@ dynamicHeaderStyle.fontWeight = "600";
 // dynamicHeaderStyle.border = "solid 2px black";
 dynamicHeaderStyle.fontSize = "2em";
 dynamicHeaderStyle.lineHeight = "1em";
-dynamicHeaderStyle.paddingTop = "110px";
-dynamicHeaderStyle.position = "absolute";
-dynamicHeaderStyle.left = "925px";
+// dynamicHeaderStyle.paddingTop = "110px";
+// dynamicHeaderStyle.left = "925px";
 
 }
 // dynamic flavor text
 // these are flex bc the parent node is flex!! [delete me]
 function dynamicText() {
     const dynamicStyle = document.getElementById("dynamic-text").style;
+    document.getElementById("dynamic-text").classList = "item2";
     document.getElementById("dynamic-text").innerText = dynamicDisplay;
     dynamicStyle.color = "var(--darkGray)";
     dynamicStyle.lineHeight = '1.5em';
     dynamicStyle.fontFamily = 'Spartan';
     dynamicStyle.fontSize = "12px";
-    dynamicStyle.position = "absolute";
-    dynamicStyle.paddingTop = '225px';
-    dynamicStyle.paddingRight = '40px';
-    dynamicStyle.marginRight = '0px';
-    dynamicStyle.left = "925px";
-//     document.getElementById("dynamic-text").color = "gray";
-//     document.getElementById("dynamic-text").fontSize = 12px;
+
 }
 
 // function shopLink() {
