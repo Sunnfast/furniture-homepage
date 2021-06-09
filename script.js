@@ -12,11 +12,13 @@ const dynamicHeaderStyle = document.getElementById("dynamic-header").style;
 document.getElementById("dynamic-header").classList = "item2";
 document.getElementById("dynamic-header").innerText = dynamicHeader;
 dynamicHeaderStyle.fontWeight = "600";
-// dynamicHeaderStyle.border = "solid 2px black";
-dynamicHeaderStyle.fontSize = "2em";
+dynamicHeaderStyle.fontSize = "2.3em";
 dynamicHeaderStyle.lineHeight = "1em";
-// dynamicHeaderStyle.paddingTop = "110px";
-// dynamicHeaderStyle.left = "925px";
+dynamicHeaderStyle.paddingTop = "3em";
+dynamicHeaderStyle.paddingLeft = "3em";
+dynamicHeaderStyle.paddingRight = "2em";
+dynamicHeaderStyle.marginRight = "3em";
+dynamicHeaderStyle.minWidth = "90%";
 
 }
 // dynamic flavor text
@@ -29,6 +31,7 @@ function dynamicText() {
     dynamicStyle.lineHeight = '1.5em';
     dynamicStyle.fontFamily = 'Spartan';
     dynamicStyle.fontSize = "12px";
+    dynamicStyle.marginLeft = "6em";
 
 }
 
