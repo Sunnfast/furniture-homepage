@@ -167,11 +167,12 @@
 
   Shop now -->
 
-  
-  <div class="attribution" id = "attribution">
+  <footer> <div class="attribution" id = "attribution">
     Assets Provided by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/Sunnfast" target="_blank">Simone Christen</a>.
   </div>
+  </footer>
+ 
 </body>
 
 <script src = "script.js"></script>
@@ -187,12 +188,43 @@
       dynamicHeaderStyle.paddingRight = "4em";
       dynamicHeaderStyle.fontSize = "1.5em";
       
+      // dynamic flavor text
       dynamicStyle.paddingTop = "2em";
       dynamicStyle.paddingBottom = "13em";
+      dynamicStyle.paddingRight = "1em";
+      dynamicStyle.paddingLeft = "0.5em";
+      
       dynamicStyle.marginRight = "3em";
-      dynamicStyle.marginLeft = "2em";
+      dynamicStyle.marginLeft = "1.5em";
 
       // alert('media query is functioning!')
+
+    } else { //ensures the formatting reverts back correctly
+      const dynamicHeaderStyle = document.getElementById("dynamic-header").style;
+      const dynamicStyle = document.getElementById("dynamic-text").style;
+
+      dynamicHeaderStyle.fontWeight = "600";
+      dynamicHeaderStyle.fontSize = "2.5em";
+      dynamicHeaderStyle.lineHeight = "1em";
+
+      dynamicHeaderStyle.paddingTop = "3em";
+      dynamicHeaderStyle.paddingLeft = "2.75em";
+      dynamicHeaderStyle.paddingRight = "2em";
+
+      dynamicHeaderStyle.marginRight = "3em";
+      dynamicHeaderStyle.minWidth = "90%";
+
+      // reversion for flavor text
+      dynamicStyle.color = "var(--darkGray)";
+      dynamicStyle.lineHeight = '1.5em';
+      dynamicStyle.fontFamily = 'Spartan';
+      dynamicStyle.fontSize = "12px";
+
+      dynamicStyle.marginRight = "2em";
+      dynamicStyle.marginLeft = "6em";
+
+      dynamicStyle.paddingLeft = "3em";
+      dynamicStyle.paddingTop = "2em";
     }
   }
 

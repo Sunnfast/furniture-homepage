@@ -6,25 +6,24 @@ let dynamicHeader = "Discover innovative \n ways to decorate"
 dynamicHeaderText();
 dynamicText();
 
-// dynamic header
+// dynamic header default desktop view
 function dynamicHeaderText() {
 const dynamicHeaderStyle = document.getElementById("dynamic-header").style;
 document.getElementById("dynamic-header").classList = "item2";
 document.getElementById("dynamic-header").innerText = dynamicHeader;
 dynamicHeaderStyle.fontWeight = "600";
-dynamicHeaderStyle.fontSize = "2.3em";
+dynamicHeaderStyle.fontSize = "2.5em";
 dynamicHeaderStyle.lineHeight = "1em";
 
 dynamicHeaderStyle.paddingTop = "3em";
-dynamicHeaderStyle.paddingLeft = "3em";
+dynamicHeaderStyle.paddingLeft = "2.75em";
 dynamicHeaderStyle.paddingRight = "2em";
 
 dynamicHeaderStyle.marginRight = "3em";
 dynamicHeaderStyle.minWidth = "90%";
 
 }
-// dynamic flavor text
-// these are flex bc the parent node is flex!! [delete me]
+// dynamic flavor text default desktop view
 function dynamicText() {
     const dynamicStyle = document.getElementById("dynamic-text").style;
     document.getElementById("dynamic-text").classList = "item2";
@@ -85,28 +84,7 @@ leftB.addEventListener('click', rotateGalleryLeft);
     
 rotateGalleryLeft();
 
-// MEDIA QUERIES //
-//               //
 
-
-const smallerDevice = window.matchMedia("(max-width: 1330px)");
-
-
-function handleDeviceChange(smallerDevice) {
-    const mobileHeader = document.getElementById("dynamic-header");
-    
-    if (smallerDevice.matches) {
-        mobileHeader.style.fontSize = "20px";
-        mobileHeader.style.position = 'absolute';
-        mobileHeader.style.paddingTop = '70%';
-        mobileHeader.style.right = "1000px";
-        document.body.style.backgroundColor = "pink";
-
-    }
-        
-}
-handleDeviceChange(smallerDevice);
-smallerDevice.addListener(handleDeviceChange);
 
     
 
