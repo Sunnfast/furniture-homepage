@@ -42,7 +42,10 @@
   <div class = "item2"> <!--dynamic header-->
 
     <div id = "dynamic-header">
-     
+      
+
+
+
     </div>
     <!--dynamic flavor text-->
     <div id = "dynamic-text">
@@ -172,4 +175,31 @@
 </body>
 
 <script src = "script.js"></script>
+
+<!-- adjust the dynamic header and flavor text -->
+<script>
+  function adjustHeaderPadding(smallDeviceQuery) {
+    if (smallDeviceQuery.matches) { // if media query matches
+      const dynamicHeaderStyle = document.getElementById("dynamic-header").style;
+      const dynamicStyle = document.getElementById("dynamic-text").style;
+      dynamicHeaderStyle.paddingTop = "2em";
+      dynamicHeaderStyle.paddingLeft = "1em";
+      dynamicHeaderStyle.paddingRight = "4em";
+      dynamicHeaderStyle.fontSize = "1.5em";
+      
+      dynamicStyle.paddingTop = "2em";
+      dynamicStyle.paddingBottom = "13em";
+      dynamicStyle.marginRight = "3em";
+      dynamicStyle.marginLeft = "2em";
+
+      // alert('media query is functioning!')
+    }
+  }
+
+  let smallDeviceQuery = window.matchMedia("(max-width: 1075px)")
+  adjustHeaderPadding(smallDeviceQuery) // calls function to run
+  smallDeviceQuery.addListener(adjustHeaderPadding); // adds listener to check for screen size
+
+
+</script>
 </html>

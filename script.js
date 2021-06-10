@@ -14,9 +14,11 @@ document.getElementById("dynamic-header").innerText = dynamicHeader;
 dynamicHeaderStyle.fontWeight = "600";
 dynamicHeaderStyle.fontSize = "2.3em";
 dynamicHeaderStyle.lineHeight = "1em";
+
 dynamicHeaderStyle.paddingTop = "3em";
 dynamicHeaderStyle.paddingLeft = "3em";
 dynamicHeaderStyle.paddingRight = "2em";
+
 dynamicHeaderStyle.marginRight = "3em";
 dynamicHeaderStyle.minWidth = "90%";
 
@@ -31,8 +33,12 @@ function dynamicText() {
     dynamicStyle.lineHeight = '1.5em';
     dynamicStyle.fontFamily = 'Spartan';
     dynamicStyle.fontSize = "12px";
+
+    dynamicStyle.marginRight = "2em";
     dynamicStyle.marginLeft = "6em";
 
+    dynamicStyle.paddingLeft = "3em";
+    dynamicStyle.paddingTop = "2em";
 }
 
 // function shopLink() {

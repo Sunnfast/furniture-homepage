@@ -225,19 +225,19 @@ h2 {
     display: grid;
     grid-template-columns: repeat(1, minmax(360px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(360px, 1fr)); /* five rows */
-    border: solid 3px red;
+    
 }
 
 .item1 {
     grid-column: 1;
     grid-row: 1;
-    border: solid 3px green;
+    width: 100%;
     
 }
 
 #rotating-image {
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 
@@ -320,7 +320,7 @@ h2 {
 /*    LARGE SCREENS & DISPLAYS      */
 /*                                  */
 
-@media (min-width: 1400px) { /*doesnt seem to work need to determine why */
+@media (min-width: 1920px) { /*doesnt seem to work need to determine why */
    #attribution a {
        color:brown
    }
