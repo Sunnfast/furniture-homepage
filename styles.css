@@ -10,12 +10,50 @@ html {
     font-family: 'Spartan', sans-serif;
 } 
 
+.topnav {
+    overflow: hidden;
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 5;
+    width: 100%;
+}
+  
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    float: left;
+    color: var(--black);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: white;
+    
+  }
+  
+  .topnav a.icon {
+    float: left;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+    color: white;
 
+  }
 /*                       */
 /*                       */
 /* grid items start here */
 /*                       */
 /*                       */
+
 
 .container {
     display: grid;
@@ -124,7 +162,12 @@ html {
   position: absolute;
   top: 21.2rem;
   right: 13rem;
+  
 
+}
+
+#arrow svg {
+    color: var(--darkGray);
 }
 
 .shop {
@@ -303,11 +346,17 @@ footer {
     top: 19rem;
     min-width: 145px;
     left: 1.5rem;
+    margin-left: 0.4rem;
+    bottom: 2rem;
+    color: var(--black);
 }
 
 .arrow {
     top: 19rem;
+    padding-bottom: 0.5rem;
     right: 8rem;
+    left: 15rem;
+    color: var(--black);
 }
 
 /*item 3 is still empty */
@@ -346,7 +395,7 @@ footer {
 
 #logo {
     left: 42.5%;
-    top: 10%;
+    top: 5%;
 }
 
 #navbar {
