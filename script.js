@@ -40,6 +40,7 @@ function dynamicText() {
 
     dynamicStyle.paddingLeft = "3em";
     dynamicStyle.paddingTop = "2em";
+    dynamicStyle.paddingRight = "2.5em";
 }
 
 
