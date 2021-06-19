@@ -23,9 +23,33 @@
       alt = "Room Logo"
       id = "logo">
   </div>
+
+  <!--mobile navbar-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div class="topnav">
+    <div id="myLinks">
+      <a class = "nav-link interactive" href = "#">home</a>
+       <a class = "nav-link interactive" href = "#">shop</a>
+       <a class = "nav-link interactive" href = "#">about</a>
+       <a class = "nav-link interactive" href = "#">contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!--Desktop NAVBAR-->
+  <div id = navdiv>  
+    <nav id = "navbar"
+    class = "navbar"> 
+       <a class = "nav-link interactive" href = "#">home</a>
+       <a class = "nav-link interactive" href = "#">shop</a>
+       <a class = "nav-link interactive" href = "#">about</a>
+       <a class = "nav-link interactive" href = "#">contact</a>
+      
+    </nav>
+  </div>
   
-
-
   
 <div class = "container">
 <!--TOP HALF (dyanmic)-->
@@ -39,44 +63,51 @@
   </div>
 
   <!--grid item 2-->
-  <div class = "item2"> <!--dynamic header-->
-
+  <div class = "item2"> 
+    <!--dynamic header-->
     <div id = "dynamic-header">
-      
-
-
-
+    
     </div>
     <!--dynamic flavor text-->
     <div id = "dynamic-text">
-      
     </div>
     
     <!--left/right buttons-->
-    <div id = "click-btns">
-      
-      <button id = "left-btn"
-      class = "btn"
-      type = "button">
+    
+      <div id = "click-btns">
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24">
-            <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd"/>
-          </svg>
-          </button>
-
-        
-      <button
-        id = "right-btn"
+        <button id = "left-btn"
         class = "btn"
-        type = "button"> 
+        type = "button">
+          
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd"/>
+            </svg>
+            </button>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24">
-          <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd"/>
-         
-        </svg>
+          
+        <button
+          id = "right-btn"
+          class = "btn"
+          type = "button"> 
+              
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24">
+            <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd"/>
+          </svg>
     
       </button>
     </div>
+     <!--ARROW SVG-->
+  <div id ="arrow" 
+  class = "arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="12" class = "interactive">
+      <path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill-rule="nonzero"/>
+    </svg>
+  </div>
+      <div class="shop" 
+      id = "shop">
+      SHOP NOW
+      </div>
 
   </div>
    
@@ -122,25 +153,9 @@
 
 
 </div>
-  <!--ARROW SVG-->
-  <div id ="arrow">
-    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="12" class = "interactive">
-      <path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/>
-    </svg>
-  </div>
+ 
 
-  <!--NAVBAR-->
-  <div id = navdiv>  
-    <nav id = "navbar"
-    class = "navbar"> 
-       <a class = "nav-link interactive" href = "#">home</a></p> 
-       <a class = "nav-link interactive" href = "#">shop</a></p> 
-       <a class = "nav-link interactive" href = "#">about</a></p> 
-       <a class = "nav-link interactive" href = "#">contact</a></p>
-      
-    </nav>
-  </div>
-  
+
  
 <!-- 
   Discover innovative ways to decorate

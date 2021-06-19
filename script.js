@@ -1,10 +1,22 @@
+// mobile navbar
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
 // dynamic header, flavor text, and shop now
 
 let dynamicDisplay =  "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love."
 let dynamicHeader = "Discover innovative \n ways to decorate"
 
+
 dynamicHeaderText();
 dynamicText();
+
 
 // dynamic header default desktop view
 function dynamicHeaderText() {
@@ -31,18 +43,17 @@ function dynamicText() {
     dynamicStyle.color = "var(--darkGray)";
     dynamicStyle.lineHeight = '1.5em';
     dynamicStyle.fontFamily = 'Spartan';
-    dynamicStyle.fontSize = "12px";
+    dynamicStyle.fontSize = "1.5rem";
 
     dynamicStyle.marginRight = "2em";
     dynamicStyle.marginLeft = "6em";
 
     dynamicStyle.paddingLeft = "3em";
     dynamicStyle.paddingTop = "2em";
+    dynamicStyle.paddingRight = "2.5em";
 }
 
-// function shopLink() {
 
-// }
 
 // use buttons to rotate through gallery in one direction 
 // STATUS: CURRENTLY NOT FUNCTIONING
