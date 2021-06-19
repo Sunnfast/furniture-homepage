@@ -11,43 +11,9 @@ html {
 } 
 
 .topnav {
-    overflow: hidden;
-    position: absolute;
-    top: 0.75rem;
-    left: 0.75rem;
-    z-index: 5;
-    width: 100%;
-}
-  
-  
-  .topnav #myLinks {
     display: none;
-  }
-  
-  .topnav a {
-    float: left;
-    color: var(--black);
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 14px;
-    background-color: white;
-    
-  }
-  
-  .topnav a.icon {
-    float: left;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .active {
-    background-color: #04AA6D;
-    color: white;
+}
 
-  }
 /*                       */
 /*                       */
 /* grid items start here */
@@ -302,12 +268,56 @@ footer {
 /*                                  */
 
 @media (max-width: 1188px) {
+/* mobile menu bar */
+
+.topnav {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 5;
+    width: 100%;
+}
+  
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    float: left;
+    color: var(--black);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: white;
+    
+    
+  }
+  
+  .topnav a.icon {
+    float: left;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+    color: white;
+
+  }
+
 .container {
     display: grid;
     grid-template-columns: repeat(1, minmax(360px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(360px, 1fr)); /* five rows */
     
 }
+
 
 .item1 {
     grid-column: 1;
